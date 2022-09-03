@@ -170,7 +170,7 @@ if __name__ == "__main__":
     parser = get_arguments()
     args = parser.parse_args()
     args.path_data = args.path_data.format(args.dataset_name)
-    type = 'cutIn'
+    type = 'follow'
     if type == 'follow':
         args.time_series_file = './data/follow.txt'
         args.feature_file = './data/output/follow_features.csv'
